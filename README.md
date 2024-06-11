@@ -5,3 +5,7 @@ Therefore to delete the thoose data segments, you can use only "FLUSHDB" instead
 
 This is the time difference between FLUSHDB (33 ms) and SCAN-DEL (15 seconds).
 ![alt text](./image.png)
+
+On this example, it will:
+1. insert 100k data.
+2. DeleteFlushDB (FLUSHDB, on DB0) & DeleteByPattern (SCAN and DEL, on DB1) 
